@@ -1,0 +1,109 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+import = [
+        "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+# Colorscheme (you can replace this with your favorite)
+[colors]
+primary = { background = "#333333", foreground = "#34e2e2" } # Dark grey background, light grey foreground (default text)
+cursor = { text = "#06989a", cursor = "#ffa726" }       # Dark grey cursor text, orange cursor
+
+[colors.normal]
+black = "#2e3440"   # Very dark grey/black
+red = "#cc6666"     # A shade of red
+green = "#8ae234"   # Green (like mine, from a Solarized base)
+yellow = "#fce94f"  # Yellow
+blue = "#729fcf"    # Blue
+magenta = "#ad7fa8" # Magenta
+cyan = "#34e2e2"    # Cyan
+white = "#d3d7cf"   # Light grey
+
+[colors.bright]
+#bright_black = "#555753" # Slightly lighter black
+#bright_red = "#ef2929"   # Bright red
+#bright_green = "#8ae234"  # Bright green (same as normal green for emphasis)
+#bright_yellow = "#fce94f" # Bright yellow (same as normal yellow)
+#bright_blue = "#3465a4"   # Bright blue
+#bright_magenta = "#75507b" # Bright magenta
+#bright_cyan = "#06989a"   # Bright cyan
+#bright_white = "#eeeeec"  # Very light grey
+
+# Font configuration
+[font]
+normal = { family = "VictorMono Nerd Font Mono", style = "Bold" }
+bold = { family = "VictorMono Nerd Font Mono", style = "Bold" }
+italic = { family = "VictorMono Nerd Font Mono", style = "Italic" }
+size = 13.0
+# Ligatures (check Alacritty documentation for current setting)
+#use_ligatures = true
+
+# Window configuration
+[window]
+opacity = 1 # Adjust for desired transparency
+padding = { x = 10, y = 10 }
+dynamic_padding = false
+decorations = "full" # Or "full" if you prefer window borders and buttons
+startup_mode = "Windowed"
+
+# Scrolling configuration
+[scrolling]
+history = 10000 # Number of lines to keep in scrollback
+multiplier = 3 # Scroll speed
+
+# Cursor configuration
+[cursor]
+style = "Beam" # Or "Block" or "Underline"
+unfocused_hollow = true # Make cursor hollow when window is unfocused
+
+# Keyboard bindings (example tmux-like shortcuts)
+[keyboard]
+[[keyboard.bindings]]
+key = "S"
+mods = "Control"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Control"
+action = "Quit" # Corrected action for closing window
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+# Mouse bindings (example paste on middle click)
+[mouse]
+[[mouse.bindings]]
+mouse = "Middle"
+action = "PasteSelection"
+
+# Shell configuration
+#[shell]
+#shell = { program = "/usr/bin/bash" }
+
+# Live config reload (press Ctrl+Shift+R to reload config)
+#live_config_reload = true
