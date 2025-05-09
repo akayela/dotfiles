@@ -1,0 +1,16 @@
+# /home/ak/.config/tmuxinator/infinizim.yml
+
+name: infinizim
+root: /media/ak/terrabyte2/projects/infinizim
+windows:
+  - editor:
+      layout: main-vertical
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - editor:
+          - cd /media/ak/terrabyte2/projects/infinizim && vim
+        - cd /media/ak/terrabyte2/projects/infinizim/ 
+        - cd /media/ak/terrabyte2/projects/infinizim/ 
+        

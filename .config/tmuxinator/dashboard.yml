@@ -1,0 +1,15 @@
+# /home/ak/.config/tmuxinator/dashboard.yml
+
+name: dashboard
+root: ~/projects/dashboard 
+
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - ssh ak@192.168.88.13
+        - nvim
+  - server:
+      panes:
+        -- bash
