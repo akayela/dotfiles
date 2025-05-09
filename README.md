@@ -47,6 +47,13 @@ $ sudo apt install stow
 
 ```
 
+### Tmux
+
+```
+$ sudo apt install tmux
+$ sudo apt install tmuxinator
+```
+
 ### Clone dotfiles
 
 ```
