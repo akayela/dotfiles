@@ -1,0 +1,23 @@
+# Alacritty configuration file (TOML)
+# https://github.com/alacritty/alacritty/blob/master/extra/alacritty.toml
+
+[window]
+dimensions = { columns = 120, lines = 30 }
+decorations = "full"
+opacity = 0.95
+startup_mode = "Windowed"
+
+[font]
+normal = { family = "FantasqueSansM Nerd Font", style = "Regular" }
+size = 14.0
+
+[colors.primary]
+background = "#0f111a"
+foreground = "#e0e0e0"
+
+[colors.cursor]
+text = "#0f111a"
+cursor = "#ffcc00"
+
+[selection]
+save_to_clipboard = true

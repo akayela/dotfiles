@@ -157,6 +157,7 @@ if [[ -n $SSH_CONNECTION ]]; then
  alias ohmybash="nvim ~/.oh-my-bash"
  alias alacf="nvim ~/.config/alacritty/alacritty.toml"
  alias nvcf="cd .config/nvim && nvim"
+ alias nexo="cd /media/ak/terrabyte2/projects/nexoafric-platform"
 
 # xmodmap
 alias mk="xmodmap ~/.Xmodmap"
